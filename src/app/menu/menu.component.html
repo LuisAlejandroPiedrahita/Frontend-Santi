@@ -1,29 +1,40 @@
-<nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="#">ECMS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
+<header>
+  <div class="contenedor">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index">ECMC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" routerLink="/"><i class="fas fa-home"></i> Inicio</a>
+              <a class="nav-link" routerLink="/index"><i class="fas fa-home"></i> Inicio</a>
             </li>
             <li class="nav-item" *ngIf="isLogged">
-                <a class="nav-link" routerLink="/lista"><i class="far fa-list-alt"></i> Lista</a>
+              <a class="nav-link" routerLink="/ver-productos"><i class="far fa-list-alt"></i> Productos</a>
             </li>
             <li class="nav-item" *ngIf="isAdmin">
-                <a class="nav-link" routerLink="/nuevo"><i class="fas fa-plus-circle"></i> Nuevo</a>
+              <a class="nav-link" routerLink="/lista"><i class="far fa-list-alt"></i> Lista</a>
             </li>
-
-        </ul>
-
-        <form class="form-inline my-2 my-lg-0">
+            <li class="nav-item" *ngIf="isAdmin">
+              <a class="nav-link" routerLink="/nuevo"><i class="fas fa-plus-circle"></i> Nuevo</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 d-flex">
             <button *ngIf="!isLogged" class="btn " routerLink="/login" type="submit">
-        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+              <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+            </button>
             <button *ngIf="isLogged" class="btn btn-outline-danger my-2 my-sm-0" (click)="onLogOut()" type="reset">
-          <i class="fas fa-sign-in-alt"></i>
-          <i class="fas fa-door-open"></i> Cerrar Sesión</button>
-        </form>
+              <i class="fas fa-sign-in-alt"></i>
+              <i class="fas fa-door-open"></i> Cerrar Sesión
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
 
-    </div>
-</nav>
+

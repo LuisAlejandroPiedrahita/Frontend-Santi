@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&family=Shadows+Into+Light&display=swap');
+
 .contenedor {
-    background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    padding-top: 100px;
-    padding-left: 300px;
-    padding-right: 300px;
+  background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 table,
@@ -19,25 +20,25 @@ tr,
 th,
 td,
 tbody {
-    border: none;
+  border: none;
 }
 
 td {
-    color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 th {
-    color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .btn1 {
-    background-color: transparent;
-    color: red;
-    border-color: red;
+  background-color: transparent;
+  color: red;
+  border-color: red;
 }

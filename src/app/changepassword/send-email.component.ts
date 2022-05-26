@@ -16,7 +16,8 @@ export class SendEmailComponent implements OnInit {
   constructor(
     private emailPasswordService: EmailPasswordService,
     private toastrService: ToastrService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
@@ -25,9 +26,9 @@ export class SendEmailComponent implements OnInit {
     this.dto = new EmailValuesDTO(this.mailTo);
     this.emailPasswordService.sendEmail(this.dto).subscribe(
       data => {
-          this.toastrService.success(data.mensaje, 'OK', {
-            timeOut: 3000, positionClass: 'toast-top-center'
-          });
+        this.toastrService.success(data.mensaje, 'OK', {
+          timeOut: 3000, positionClass: 'toast-top-center'
+        });
       },
       err => {
         this.toastrService.error(err.error.mensaje, 'FAIL', {

@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
     private authService: AuthService,
     private router: Router,
     private toastr: ToastrService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
@@ -38,7 +39,7 @@ export class LoginComponent implements OnInit {
       err => {
         this.errMsj = err.error.message;
         this.toastr.error(this.errMsj, 'Fail', {
-          timeOut: 3000,  positionClass: 'toast-top-center',
+          timeOut: 3000, positionClass: 'toast-top-center',
         });
       }
     );

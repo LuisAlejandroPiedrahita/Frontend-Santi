@@ -22,13 +22,14 @@ export class ChangePasswordComponent implements OnInit {
     private toastrService: ToastrService,
     private router: Router,
     private activatedRoute: ActivatedRoute
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
 
   onChangePassword(): void {
-    if(this.password !== this.confirmPassword) {
+    if (this.password !== this.confirmPassword) {
       this.toastrService.error('Las contraseñas no coinciden', 'FAIL', {
         timeOut: 3000, positionClass: 'toast-top-center'
       });
@@ -42,12 +43,12 @@ export class ChangePasswordComponent implements OnInit {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
         this.router.navigate(['/login']);
-    },
-    err => {
-      this.toastrService.error(err.error.mensaje, 'FAIL', {
-        timeOut: 3000, positionClass: 'toast-top-center'
-      });
-    }
+      },
+      err => {
+        this.toastrService.error(err.error.mensaje, 'FAIL', {
+          timeOut: 3000, positionClass: 'toast-top-center'
+        });
+      }
     );
   }
 

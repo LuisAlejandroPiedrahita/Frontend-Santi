@@ -1,5 +1,152 @@
-<app-menu></app-menu>
-
 <div class="contenedor">
-
+  <app-menu></app-menu>
+  <br>
+  <br>
+  <br>
+  <div class="sub-contenedor">
+    <div class="row-2" id="fila2">
+      <div class="row text-center titulo2">
+        <h1>¿Quíenes somos?</h1>
+      </div>
+      <div class="row text-center parrafo2">
+        <p>hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola
+          hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola
+          hola hola hola hola hola hola hola hola hola hola</p>
+      </div>
+    </div>
+    <div class="row" id="fila1">
+      <div class="col-8">
+        <video autoplay="autoplay" loop="loop" muted="muted" class="d-lg-block video">
+          <source
+            src="https://redragon.es/content/uploads/2022/05/220520-Redragon-Storm-M808_Presentacion_Header-Web.mp4"
+            type="video/mp4">
+        </video>
+      </div>
+      <div class="col-4 ">
+        <div class="row nombre_producto text-center">
+          <h2>Ver productos</h2>
+        </div>
+        <div class="row boton justify-content-center">
+          <button *ngIf="isLogged" type="button" class="btn btn-outline-primary" (click)="verProductos()"><i
+            class="far fa-eye"></i> Ir a los productos
+          </button>
+          <button *ngIf="!isLogged" type="button" class="btn btn-outline-primary" routerLink="/login"><i
+            class="far fa-eye"></i> Ir a los productos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="fila3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Teclados-1500x1182-1.jpg"
+               class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Teclados</h5>
+            <p>Completos, TKL, 60%, silenciosos, clicky… Hay mucha variedad. ¡Elige el tuyo!.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Ratones-1500x1182-1.jpg" class="d-block w-100"
+               alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ratones</h5>
+            <p>Precisión, rapidez, comodidad, durabilidad y mucha luz. Ratones para ganar..</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Audio-1500x1182-1.jpg" alt="auriculares gamer"
+               class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Audio</h5>
+            <p>Auriculares y micrófonos que liberan toda la fuerza del sonido. ¡Conócelos!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Camaras-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cámaras</h5>
+            <p>Si te atrae el streaming, éste es el lugar para ti. ¡Adelante, anímate!.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Alfombrillas-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Alfombrillas</h5>
+            <p>Encuentra la precisión absoluta en nuestras alfombrillas para ratón.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Mandos-1500x1182-1.jpg" alt="auriculares gamer"
+               class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mandos</h5>
+            <p>Tus manos saben lo que necesitan; escúchalas. Para consolas y PC.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Gabinetes-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Gabinetes</h5>
+            <p>Descubre la torre formidable donde habitarán tus componentes y su magia.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Fuentes-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fuentes de alimentación</h5>
+            <p>Seguridad, eficiencia y poder. Lo mejor de lo mejor para tu máquina de guerra.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Refrigeracion-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Refrigeración</h5>
+            <p>Desencadena el poder de tu CPU con nuestros disipadores de alto rendimiento.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Monitores-1500x1182-1.jpg"
+               alt="auriculares gamer" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Monitores</h5>
+            <p>Adéntrate en nuevos mundos donde el movimiento fluye y el color estalla.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Combos-1500x1182-1.jpg" alt="auriculares gamer"
+               class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Combos</h5>
+            <p>Nada mejor que un &quot;todo en uno&quot; para armar tu estudio gamer.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://redragon.es/content/uploads/2021/06/Megamenu-Sillas-1500x1182-1.jpg" alt="auriculares gamer"
+               class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sillas</h5>
+            <p>Más que cómodas: saludables. El sostén imprescindible para las horas prolongadas.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 </div>

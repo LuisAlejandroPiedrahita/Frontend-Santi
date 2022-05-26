@@ -1,5 +1,5 @@
-import { Router } from '@angular/router';
-import { Injectable } from '@angular/core';
+import {Router} from '@angular/router';
+import {Injectable} from '@angular/core';
 
 const TOKEN_KEY = 'AuthToken';
 
@@ -12,7 +12,8 @@ export class TokenService {
 
   constructor(
     private router: Router
-  ) { }
+  ) {
+  }
 
   public setToken(token: string): void {
     window.localStorage.removeItem(TOKEN_KEY);

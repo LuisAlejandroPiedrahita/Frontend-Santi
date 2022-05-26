@@ -8,11 +8,11 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 })
 export class LoginGuard implements CanActivate {
 
-
   constructor(
     private tokenService: TokenService,
     private router: Router
-  ) { }
+  ) {
+  }
 
   canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     if (this.tokenService.isLogged()) {

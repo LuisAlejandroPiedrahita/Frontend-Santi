@@ -1,52 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&family=Shadows+Into+Light&display=swap');
+
 .contenedor {
-    background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.25);
-    background-size: cover;
-    border: 1px solid;
-    border-radius: 5px;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border-color: rgb(87, 3, 3);
+  background: rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-color: rgb(87, 3, 3);
 }
 
 li {
-    background: rgba(0, 0, 0, 0.25);
-    border-color: rgb(87, 3, 3);
-    color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  background: rgba(0, 0, 0, 0.25);
+  border-color: rgb(87, 3, 3);
+  color: white;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .btn {
-    background-color: transparent;
-    color: red;
-    border-color: red;
+  background-color: transparent;
+  color: red;
+  border-color: red;
 }
 
 .card-header {
-    background: rgba(0, 0, 0, 0.25);
-    color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .card-footer {
-    background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.25);
 }

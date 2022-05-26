@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Producto } from '../models/producto';
-import { ProductoService } from '../service/producto.service';
-import { ToastrService } from 'ngx-toastr';
-import { TokenService } from '../service/token.service';
+import {Component, OnInit} from '@angular/core';
+import {Producto} from '../models/producto';
+import {ProductoService} from '../service/producto.service';
+import {ToastrService} from 'ngx-toastr';
+import {TokenService} from '../service/token.service';
 
 @Component({
   selector: 'app-lista-producto',
@@ -18,7 +18,8 @@ export class ListaProductoComponent implements OnInit {
     private productoService: ProductoService,
     private toastr: ToastrService,
     private tokenService: TokenService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
     this.cargarProductos();

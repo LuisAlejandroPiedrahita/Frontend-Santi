@@ -1,0 +1,67 @@
+.contenedor {
+  background-image: url("../../assets/imagenes/index.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  flex: auto;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+.card {
+  background-color: black;
+  background-size: cover;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(87, 3, 3);
+  box-shadow: 0 0 20px #6e6b6b;
+  color: darkgray;
+  margin-left: 25px;
+  height: 200px;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0.9;
+}
+
+.col {
+  text-align: center;
+}
+
+.card-body {
+  margin-top: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border-color: rgb(87, 3, 3);
+}
+
+.regresar {
+  text-align: center;
+  background-color: transparent;
+  color: darkturquoise;
+  border-color: darkturquoise;
+  width: 200px;
+}
+
+.fila-boton {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.ver {
+  text-align: center;
+  background-color: transparent;
+  color: red;
+  border-color: red;
+  width: 200px;
+}

@@ -16,7 +16,8 @@ export class ProdInterceptorService implements HttpInterceptor {
   constructor(
     private tokenService: TokenService,
     private authService: AuthService
-  ) { }
+  ) {
+  }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
@@ -46,8 +47,8 @@ export class ProdInterceptorService implements HttpInterceptor {
   }
 
   private addToken(req: HttpRequest<any>, token: string): HttpRequest<any> {
-    return req.clone({ headers: req.headers.set('Authorization', 'Bearer ' + token) });
+    return req.clone({headers: req.headers.set('Authorization', 'Bearer ' + token)});
   }
 }
 
-export const interceptorProvider = [{ provide: HTTP_INTERCEPTORS, useClass: ProdInterceptorService, multi: true }];
+export const interceptorProvider = [{provide: HTTP_INTERCEPTORS, useClass: ProdInterceptorService, multi: true}];

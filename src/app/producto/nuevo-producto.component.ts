@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductoService } from '../service/producto.service';
-import { Producto } from '../models/producto';
-import { ToastrService } from 'ngx-toastr';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {ProductoService} from '../service/producto.service';
+import {Producto} from '../models/producto';
+import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-nuevo-producto',
@@ -18,7 +18,8 @@ export class NuevoProductoComponent implements OnInit {
     private productoService: ProductoService,
     private toastr: ToastrService,
     private router: Router
-    ) { }
+  ) {
+  }
 
   ngOnInit() {
   }
@@ -34,7 +35,7 @@ export class NuevoProductoComponent implements OnInit {
       },
       err => {
         this.toastr.error(err.error.mensaje, 'Fail', {
-          timeOut: 3000,  positionClass: 'toast-top-center',
+          timeOut: 3000, positionClass: 'toast-top-center',
         });
       }
     );

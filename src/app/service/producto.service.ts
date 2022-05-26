@@ -1,8 +1,8 @@
-import { environment } from './../../environments/environment';
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Producto } from '../models/producto';
+import {environment} from './../../environments/environment';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {Producto} from '../models/producto';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,8 @@ export class ProductoService {
 
   productoURL = environment.productoURL;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+  }
 
   public lista(): Observable<Producto[]> {
     return this.httpClient.get<Producto[]>(this.productoURL + 'lista');

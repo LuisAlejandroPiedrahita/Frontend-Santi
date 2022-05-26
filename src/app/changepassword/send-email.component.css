@@ -1,66 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&family=Shadows+Into+Light&display=swap');
+
 .contenedor {
-    background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  background-image: url("../../assets/imagenes/WALLPAPER-13-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
-    background: rgba(0, 0, 0, -0.1);
-    background-size: cover;
-    border: 1px solid;
-    border-radius: 5px;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, -0.1);
+  background-size: cover;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn {
-    background-color: transparent;
-    color: red;
-    border-color: red;
+  background-color: transparent;
+  color: red;
+  border-color: red;
 }
 
 .nav {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-link.active {
-    color: rgb(255, 0, 0);
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  color: rgb(255, 0, 0);
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .nav-item {
-    color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 .nav-tabs {
-    opacity: 0, 10;
+  opacity: 0, 10;
 }
 
 .nav-link {
-    color: rgb(255, 0, 0);
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
-    opacity: 0, 1;
+  color: rgb(255, 0, 0);
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0, 1;
 }
 
 .h6 {
-    color: white;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Shadows Into Light', cursive;
+  color: white;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 

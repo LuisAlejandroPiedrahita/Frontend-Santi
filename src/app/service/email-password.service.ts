@@ -1,9 +1,9 @@
-import { ChangePasswordDTO } from './../models/change-password-dto';
-import { Observable } from 'rxjs';
-import { EmailValuesDTO } from './../models/email-values-dto';
-import { HttpClient } from '@angular/common/http';
-import { environment } from './../../environments/environment';
-import { Injectable } from '@angular/core';
+import {ChangePasswordDTO} from './../models/change-password-dto';
+import {Observable} from 'rxjs';
+import {EmailValuesDTO} from './../models/email-values-dto';
+import {HttpClient} from '@angular/common/http';
+import {environment} from './../../environments/environment';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,8 @@ export class EmailPasswordService {
 
   changePasswordURL = environment.changePasswordURL;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+  }
 
   public sendEmail(dto: EmailValuesDTO): Observable<any> {
     return this.httpClient.post<any>(this.changePasswordURL + 'send-email', dto);

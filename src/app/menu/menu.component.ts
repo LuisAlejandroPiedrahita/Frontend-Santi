@@ -11,11 +11,12 @@ export class MenuComponent implements OnInit {
   isLogged = false;
   isAdmin = false;
 
-  constructor(private tokenService: TokenService) { }
+  constructor(private tokenService: TokenService) {
+  }
 
   ngOnInit() {
-   this.isLogged = this.tokenService.isLogged();
-   this.isAdmin = this.tokenService.isAdmin();
+    this.isLogged = this.tokenService.isLogged();
+    this.isAdmin = this.tokenService.isAdmin();
   }
 
   onLogOut(): void {

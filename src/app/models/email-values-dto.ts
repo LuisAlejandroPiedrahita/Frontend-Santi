@@ -1,8 +1,8 @@
 export class EmailValuesDTO {
 
-    mailTo: string;
+  mailTo: string;
 
-    constructor(mailTo: string) {
-        this.mailTo = mailTo;
-    }
+  constructor(mailTo: string) {
+    this.mailTo = mailTo;
+  }
 }
